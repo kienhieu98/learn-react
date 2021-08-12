@@ -4,10 +4,8 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 const ExpenseItem = (props) => {
   const [title,setTitle]=useState(props.title);
-  console.log("reload -****")
   const handleClick = () => {
     setTitle('Updated Title');
-    console.log(title)
   }
   return (
     <Card className="expense-item">
